@@ -14,4 +14,15 @@ pipeline {
            }
         }
     }
+    
+    stage('Build Docker'){
+            steps{
+                script{
+                    sh '''
+                    echo 'Buid Docker Image'
+                    docker build -t sirajtr/pipeline:${BUILD_NUMBER} .
+                    '''
+                }
+            }
+        }
 }       
