@@ -13,5 +13,5 @@ pipeline {
             git 'https://github.com/Sirajtr/pipeline.git'
            }
         }
-
+    }
         
