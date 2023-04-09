@@ -12,8 +12,8 @@ pipeline {
            steps {
             git 'https://github.com/Sirajtr/pipeline.git'
            }
-        }
-    }
+        
+    
     
     stage('Build Docker'){
             steps{
@@ -25,4 +25,5 @@ pipeline {
                 }
             }
         }
+    }
 }       
